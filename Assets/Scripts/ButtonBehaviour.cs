@@ -2,11 +2,11 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class ButtonBehaviour : MonoBehaviour {
+public class ButtonBehaviour : BaseObject {
 
     Image _image;
 
-	void Awake() {
+    protected override void LateAwake() {
         _image = GetComponent<Image>();
 	}
 
